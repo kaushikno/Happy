@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkFlow - Stories</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e2e;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #222;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .content {
+            padding: 100px 20px 20px;
+            text-align: center;
+        }
+        .story {
+            background: #2a2a3a;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards ease-in-out;
+        }
+        .story:nth-child(1) { animation-delay: 0.2s; }
+        .story:nth-child(2) { animation-delay: 0.4s; }
+        .story:nth-child(3) { animation-delay: 0.6s; }
+        .story:nth-child(4) { animation-delay: 0.8s; }
+        .story:nth-child(5) { animation-delay: 1s; }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .story h2 {
+            margin: 0 0 10px;
+            color: #FFD700;
+        }
+        .story p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>InkFlow - Stories</h1>
+    </div>
+    <div class="content">
+        <div class="story">
+            <h2>The Lion and the Mouse</h2>
+            <p>A small mouse helps a lion in need, proving that kindness is never wasted.</p>
+        </div>
+        <div class="story">
+            <h2>The Tortoise and the Hare</h2>
+            <p>Slow and steady wins the race in this classic tale of perseverance.</p>
+        </div>
+        <div class="story">
+            <h2>The Boy Who Cried Wolf</h2>
+            <p>A lesson on honesty, teaching that lies can lead to dire consequences.</p>
+        </div>
+        <div class="story">
+            <h2>The Ant and the Grasshopper</h2>
+            <p>Hard work and planning ahead are key themes in this moral story.</p>
+        </div>
+        <div class="story">
+            <h2>The Goose That Laid the Golden Eggs</h2>
+            <p>Greed can lead to loss, as this story about a golden goose teaches.</p>
+        </div>
+    </div>
+</body>
+</html>

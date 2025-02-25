@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkFlow - Discover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e2e;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #222;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .content {
+            padding: 100px 20px 20px;
+            text-align: center;
+        }
+        .blog {
+            background: #2a2a3a;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards ease-in-out;
+        }
+        .blog:nth-child(1) { animation-delay: 0.2s; }
+        .blog:nth-child(2) { animation-delay: 0.4s; }
+        .blog:nth-child(3) { animation-delay: 0.6s; }
+        .blog:nth-child(4) { animation-delay: 0.8s; }
+        .blog:nth-child(5) { animation-delay: 1s; }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .blog h2 {
+            margin: 0 0 10px;
+            color: #FFD700;
+        }
+        .blog p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>InkFlow - Discover</h1>
+    </div>
+    <div class="content">
+        <div class="blog">
+            <h2>1.AI and the Future: A Glimpse into What Lies Ahead</h2>
+            <p>Artificial Intelligence (AI) has already transformed our world in ways we never imagined. From self-driving cars to personalized recommendations, AI is becoming an integral part of our daily lives. But what does the future hold? Will AI be a tool for human progress, or does it come with risks we need to be wary of?
+
+AI in Everyday Life
+AI is already making our lives easier. Virtual assistants like Siri and Alexa help us with tasks, recommendation systems suggest movies and music, and smart home devices automate household chores. In the future, AI will become even more seamless, predicting our needs before we even ask.
+AI in the Workforce
+Automation is reshaping industries. Repetitive tasks are being handled by AI-powered robots, and even creative fields like art and music are seeing AI-generated content. While this boosts efficiency, it also raises concerns about job displacement. The challenge will be to upskill workers and create new job opportunities that complement AI rather than compete with it.
+AI in Healthcare
+The medical field is already benefiting from AI-driven diagnostics, robotic surgeries, and personalized treatments. AI can detect diseases like cancer at an early stage and assist doctors in making precise decisions. The future could see AI-powered healthcare assistants providing instant diagnoses from our smartphones.
+AI and Ethics
+With great power comes great responsibility. The rise of AI brings ethical dilemmas—privacy concerns, bias in algorithms, and the fear of AI surpassing human intelligence. The key will be to develop AI responsibly, ensuring transparency and fairness in its applications.
+The Road Ahead
+AI is not here to replace us but to enhance our capabilities. As we move forward, collaboration between humans and AI will define the future. By setting ethical guidelines and ensuring responsible development, we can shape AI into a force for good.
+
+The question isn’t whether AI will change the world—it already is. The real question is: How will we shape the future of AI?</p>
+        </div>
+        <div class="blog">
+            <h2>2. Climate Change Updates</h2>
+            <p>The latest reports on climate change and what we can do to help.</p>
+        </div>
+        <div class="blog">
+            <h2>3. The Rise of Remote Work</h2>
+            <p>How companies are adapting to the shift towards remote work culture.</p>
+        </div>
+        <div class="blog">
+            <h2>4. Space Exploration in 2025</h2>
+            <p>Upcoming space missions and their impact on scientific discovery.</p>
+        </div>
+        <div class="blog">
+            <h2>5. Mental Health Awareness</h2>
+            <p>Breaking the stigma and promoting mental well-being in modern society.</p>
+        </div>
+    </div>
+</body>
+</html>

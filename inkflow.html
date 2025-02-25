@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkFlow - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+        
+        body {
+            font-family: 'UnifrakturCook', cursive;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            font-size: 32px;
+            color: #FFD700;
+            margin: 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .slide h1 {
+            font-size: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide:nth-child(odd) {
+            background: url('slide1.jpg') no-repeat center center/cover;
+        }
+        .slide:nth-child(even) {
+            background: url('slide2.jpg') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>InkFlow</h1>
+        <ul class="menu">
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </div>
+    
+    <div class="slide">
+        <h1>Welcome to InkFlow</h1>
+    </div>
+    <div class="slide">
+        <h1>Creativity, Seamless Writing</h1>
+    </div>
+    <div class="slide">
+        <h1>Explore Inspiring Blogs</h1>
+    </div>
+    <div class="slide">
+        <h1>Connect & Share Stories</h1>
+    </div>
+    
+</body>
+</html>
